@@ -116,7 +116,7 @@ def handle_start_conversation(data):
 
     threading.Thread(target=run_conversation, args=(agents, topic)).start()
 
-def run_conversation(agents, initial_message, num_turns=15):
+def run_conversation(agents, initial_message, num_turns=20):
     message = initial_message
     last_agent = None
     
